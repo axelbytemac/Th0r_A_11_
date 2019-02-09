@@ -1,25 +1,24 @@
 ///modified  by Marcel C (pwned4ever) 01/08/2018
 
 #import "ViewController.h"
-#include "codesign.h"
-#include "electra.h"
+#include "../../headers/codesign.h"
+#include "../../post-exploit/electra.h"
 
-#include "reboot.h"
-#include "multi_path_sploit.h"
-#include "vfs_sploit.h"
-#include "electra_objc.h"
+#include "../../headers/reboot.h"
+#include "../../exploit/multi_path/multi_path_sploit.h"
+#include "../../exploit/empty_list/vfs_sploit.h"
+#include "../../post-exploit/electra_objc.h"
 
-#include "kernel_memory.h"
-#include "offsets.h"
+#include "../../exploit/vouch_4ya/kernel_memory.h"
+#include "../../exploit/common/offsets.h"
 #include <sys/sysctl.h>
-#include "file_utils.h"
-#include "electra_objc.h"
-#include "utils.h"
-#include "amfi_utils.h"
-#include "kutils.h"
+#include "../../post-exploit/utilities/file_utils.h"
+#include "../../post-exploit/utilities/utils.h"
+#include "../../post-exploit/utilities/amfi_utils.h"
+#include "../../post-exploit/utilities/kutils.h"
 #include "Foundation/Foundation.h"
-#include "voucher_swap.h"
-#include "KernelMemory.h"
+#include "../../exploit/vouch_4ya/voucher_swap.h"
+#include "../../post-exploit/utilities/KernelMemory.h"
 @interface ViewController ()
 @end
 NSArray *_pickviewarray;
